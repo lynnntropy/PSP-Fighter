@@ -1,4 +1,4 @@
-TARGET = SDLTest_Omega2D
+TARGET = PSP-Fighter
 OBJS = main.o 
 
 PSPSDK = $(shell psp-config --pspsdk-path)
@@ -15,6 +15,6 @@ LIBS = -lstdc++ -lSDL_ttf -lSDL_gfx -lfreetype -lSDL_image -ljpeg -lpng -lz -lm 
 LIBS += -lpspaudiolib -lpspaudio -lpsppower
 
 EXTRA_TARGETS = EBOOT.PBP
-PSP_EBOOT_TITLE = SDLTest_Omega2D
+PSP_EBOOT_TITLE = PSP Fighter 1.0
 
 include $(PSPSDK)/lib/build.mak

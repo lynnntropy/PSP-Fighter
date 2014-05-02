@@ -107,13 +107,13 @@ int main(int argc, char *argv[])
 			bgTiles.at(i).x -= tileSpeed * 15;
 		}
 
-		for (int i = 0; i < bgTiles.size(); i++)
-		{
-			char debugString [50];
-			sprintf(debugString, "Drawing background tile at %.2f, %.2f", bgTiles.at(i).x, bgTiles.at(i).y);
+		// for (int i = 0; i < bgTiles.size(); i++)
+		// {
+		// 	char debugString [50];
+		// 	sprintf(debugString, "Drawing background tile at %.2f, %.2f", bgTiles.at(i).x, bgTiles.at(i).y);
 
-			Omega2D::DrawText(hudFont, debugString, whiteColor, 10, 35 + i * 15);			
-		}
+		// 	Omega2D::DrawText(hudFont, debugString, whiteColor, 10, 35 + i * 15);			
+		// }
 
 		Omega2D::DrawText(hudFont, frameDelayString, whiteColor, 10, 10);
 
